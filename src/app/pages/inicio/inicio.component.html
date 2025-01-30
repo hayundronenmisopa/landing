@@ -1,21 +1,48 @@
-<nav class="bg-gray-700 text-uppercase fixed-top w-full z-50">
-    <div class="container mx-auto px-4 py-6 flex items-center justify-between">
+<!-- Begin: Masthead-->
+<nav
+    [ngClass]="{
+        'py-9 ': !isScrolled,
+        'py-4 bg-opacity-90 shadow-md': isScrolled
+    }"
+    class="text-uppercase bg-gray-700 fixed w-full z-50 transition-all duration-300"
+>
+    <div class="container mx-auto px-28 flex items-center justify-between">
         <!-- Logo -->
-        <a class="text-white text-lg font-bold" href="#page-top">Hola!</a>
+        <a class="text-white text-2xl font-bold" href="#page-top">HOLA!</a>
 
         <!-- Toggler Button for Mobile View -->
-        <button class="text-white bg-cyan-500 text-uppercase font-bold rounded md:hidden p-2" type="button" aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation">
-            Menu
-            <i class="fas fa-bars"></i>
+        <button
+            class="text-white bg-cyan-500 text-uppercase font-bold rounded md:hidden p-2"
+            type="button"
+            aria-controls="navbarResponsive"
+            aria-expanded="false"
+            aria-label="Toggle navigation"
+        >
+            Menu <i class="fas fa-bars"></i>
         </button>
 
         <!-- Navbar Links -->
         <div class="md:flex hidden space-x-4" id="navbarResponsive">
-            <ul class="flex space-x-4">
-                <li><a class="text-white py-3 px-4 rounded hover:bg-primary" href="#portfolio">Portfolio</a></li>
-                <li><a class="text-white py-3 px-4 rounded hover:bg-primary" href="#about">Sobre mi</a></li>
-                <li><a class="text-white py-3 px-4 rounded hover:bg-primary" href="#contact">Contacto</a></li>
+            <ul class="flex space-x-4 font-bold uppercase">
+                <li><a class="py-3 px-4 rounded text-white hover:text-primary" href="#portfolio">Portfolio</a></li>
+                <li><a class="py-3 px-4 rounded text-white hover:text-primary" href="#about">Sobre mí</a></li>
+                <li><a class="py-3 px-4 rounded text-white hover:text-primary" href="#contact">Contacto</a></li>
             </ul>
         </div>
     </div>
 </nav>
+
+<!-- End: Masthead-->
+<!-- Begin: Header -->
+<header>
+    <div class="bg-primary text-white text-center py-96">
+        <h1 class="text-6xl font-bold uppercase">Hay un dron en mi sopa</h1>
+        <p class="text-lg">Desarrollador Web</p>
+    </div>
+</header>
+<!-- End: Header -->
+<!-- Begin: Footer -->
+<footer class="bg-gray-700 text-white text-center py-10">
+    <p>&copy; 2021 Jorge</p>
+</footer>
+<!-- End: Footer -->

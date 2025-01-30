@@ -4,3 +4,22 @@ body{
   font-family: 'Montserrat', sans-serif;
 }
 
+:root {
+    --bs-primary: #1abc9c;
+}
+
+.text-primary {
+    color: var(--bs-primary) !important;
+}
+
+.bg-primary {
+    background-color: var(--bs-primary) !important;
+}
+
+.hover\:text-primary {
+  &:hover {
+      @media (hover: hover) {
+          color: var(--bs-primary);
+      }
+  }
+}
